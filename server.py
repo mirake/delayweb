@@ -30,7 +30,7 @@ class WebRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         message_parts.append('')
         message = '\r\n'.join(message_parts)
 
-        (ip:port) = self.client_address
+        (ip, port) = self.client_address
         message = "from %s:%d \r\n\r\n" % (ip, port)
         self.send_response(200)
         self.end_headers()
