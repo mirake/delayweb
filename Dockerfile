@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER mirake mirake@docker.com
 
 RUN apt-get update && \
-    apt-get install -y vim curl wget
+    apt-get install -y vim curl wget python
 
 RUN mkdir -p /app
 ADD server.py  /app/server.py
