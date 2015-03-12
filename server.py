@@ -9,6 +9,7 @@ class WebRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             "<html>",
             "<head><title>Hello World</title></head>",
             "<body style=\"text-align:center;\">",
+            "<p><img src='alauda.jpg' /></p>",
             "<b>Hello world! Hello Alauda!</b>",
             "</body>",
             "<html>"
