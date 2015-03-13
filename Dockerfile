@@ -5,15 +5,17 @@ RUN apt-get update && \
     apt-get install -y vim curl wget python
 
 RUN mkdir -p /app
-ADD server.py  /app/server.py
-ADD run.sh  /run.sh
-RUN chmod 755 /run.sh
 
 # Define working directory.
 WORKDIR /app
 
 # Expose ports.
 EXPOSE 80
+
+ADD run.sh  /run.sh
+ADD server.py  /app/server.py
+ADD alauda.jpg  /app/alauda.jpg
+RUN chmod 755 /run.sh
 
 # Define default command.
 CMD ["/run.sh"]
