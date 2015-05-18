@@ -17,5 +17,7 @@ ADD server.py  /app/server.py
 ADD alauda.jpg  /app/alauda.jpg
 RUN chmod 755 /run.sh
 
+RUN pip install -r requirements.txt
+
 # Define default command.
 CMD ["/run.sh"]
