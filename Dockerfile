@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER mirake mirake@docker.com
 
 RUN apt-get update && \
-    apt-get install -y vim curl wget python
+    apt-get install -y vim curl wget python python-pip
 
 RUN mkdir -p /app
 
